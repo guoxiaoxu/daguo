@@ -2,7 +2,9 @@
     var Native2JSBridge={};
     Native2JSBridge._handleMessageFromApp=function(p1){
             var data =JSON.stringify(p1);
-            alert(data);
+            if (!data.includes("no privi")){
+                alert(data);
+            }
     }
     
     function attack(){
