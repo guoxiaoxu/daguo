@@ -1,6 +1,6 @@
 {
   "apis": [{
-    "url": "https://api5-normal-lf.amemv.com/passport/auth/bind/",
+    "url": "https://api.toutiaoapi.com/passport/auth/bind_with_mobile/",
     "method": "POST",
     "expireMs": 4000,
     "clearCacheBeforeRequest": 1,
