@@ -1,0 +1,18 @@
+{
+  "apis": [{
+    "url": "https://api5-normal-hl.toutiaoapi.com/passport/auth/bind_with_mobile/",
+    "method": "POST",
+    "expireMs": 4000,
+    "clearCacheBeforeRequest": 1,
+    "data": {
+      "access_token": {
+        "type": "static",
+        "value": "2.00kTest_Test_TestlIpeIGahxaB7f6aa1rnD"
+      }
+    },
+    "headers": {
+      "Content-Type": "application/x-www-form-urlencoded;"
+    },
+    "globalPropsName": "__prefetchInjectData"
+  }]
+}
