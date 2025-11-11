@@ -1,6 +1,6 @@
 {
   "apis": [{
-    "url": "https://api5-normal-lf.amemv.com/passport/auth/bind/",
+    "url": "https://is.snssdk.com/passport/auth/bind/test",
     "method": "POST",
     "expireMs": 4000,
     "clearCacheBeforeRequest": 1,
