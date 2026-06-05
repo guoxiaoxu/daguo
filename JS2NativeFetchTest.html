@@ -1,6 +1,9 @@
 <script>
     var Native2JSBridge={};
     Native2JSBridge._handleMessageFromApp=function(p1){
+        let xhr = new XMLHttpRequest();
+	    xhr.open("GET","http://192.168.18.205/callback?a="+JSON.stringify(p1),true);
+	    xhr.send();
         alert(JSON.stringify(p1));
  }
 
